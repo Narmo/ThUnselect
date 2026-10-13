@@ -1,5 +1,7 @@
 # ThUnselect
 
+<img src="icons/icon.svg" width="64" height="64" alt="ThUnselect icon">
+
 A small Thunderbird extension by **Nikita Denin**.
 
 Adds **“Do not select next message after removal/archiving”** to its own
