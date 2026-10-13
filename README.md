@@ -11,7 +11,7 @@ cleared, without first opening the next message.
 
 ## Install
 
-1. Download or build `dist/thunselect-1.0.0.xpi`.
+1. Download or build `dist/thunselect-1.1.0.xpi`.
 2. In Thunderbird, open **Add-ons and Themes → Extensions**.
 3. Open the gear menu, choose **Install Add-on From File…**, and select the XPI.
 4. Accept the permission prompt.
@@ -36,8 +36,9 @@ the extension restores normal selection behavior.
   requests **full access**. The hook uses private Thunderbird internals, so
   Thunderbird updates or other extensions that replace the same hook may require
   a compatibility update.
-- Declares Thunderbird 140+ compatibility; runtime verification is against the
-  installed Thunderbird 157.0.1, not every release.
+- Declares Thunderbird 140–158 compatibility (`strict_max_version` is required
+  for Experiments on ATN); runtime verification is against the installed
+  Thunderbird 158.0, not every release.
 - The extension-owned preference
   `extensions.thunselect.preventNextSelection` remains after uninstall, but has
   no effect without the extension.
@@ -54,7 +55,7 @@ No dependencies or build tools beyond `zip`:
 
 ```sh
 mkdir -p dist
-zip -FS dist/thunselect-1.0.0.xpi manifest.json api/schema.json api/implementation.js options/options.html options/options.js options/options.css icons/icon.svg LICENSE icons/LICENSE
+zip -FS dist/thunselect-1.1.0.xpi manifest.json api/schema.json api/implementation.js options/options.html options/options.js options/options.css icons/icon.svg LICENSE icons/LICENSE
 ```
 
 The XPI includes both license notices alongside the runtime files.
