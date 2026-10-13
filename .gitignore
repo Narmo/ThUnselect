@@ -1,0 +1,14 @@
+# Generated packages
+/dist/
+*.xpi
+
+# macOS metadata
+.DS_Store
+._*
+
+# Local editor settings and temporary files
+/.vscode/
+/.idea/
+*.swp
+*.swo
+*~

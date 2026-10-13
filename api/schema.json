@@ -1,0 +1,27 @@
+[
+  {
+    "namespace": "thunselect",
+    "functions": [
+      {
+        "name": "getEnabled",
+        "type": "function",
+        "async": true,
+        "parameters": [],
+        "returns": {
+          "type": "boolean"
+        }
+      },
+      {
+        "name": "setEnabled",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          {
+            "name": "enabled",
+            "type": "boolean"
+          }
+        ]
+      }
+    ]
+  }
+]
