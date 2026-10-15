@@ -54,11 +54,29 @@ dedicated under [CC0 1.0 Universal](icons/LICENSE).
 No dependencies or build tools beyond `zip`:
 
 ```sh
-mkdir -p dist
-zip -FS dist/thunselect-1.1.0.xpi manifest.json api/schema.json api/implementation.js options/options.html options/options.js options/options.css icons/icon.svg LICENSE icons/LICENSE
+scripts/build.sh            # -> dist/thunselect-<version>.xpi
 ```
 
 The XPI includes both license notices alongside the runtime files.
+
+## Releases
+
+Pushing a `v*` tag runs [the release workflow](.github/workflows/release.yml):
+it checks the tag matches `manifest.json`, runs the unit tests, builds the XPI
+on GitHub, and publishes a Release named after the tag with the XPI attached
+and generated release notes. No extra secrets are needed.
+
+Bump `manifest.json` and commit it before tagging, for example:
+
+```sh
+git tag -a v1.2.0 -m "ThUnselect 1.2.0"
+git push origin HEAD v1.2.0
+```
+
+The tagged commit must include the workflow for automatic releases. To release
+an existing tag manually, use **Actions → Release → Run workflow**, select the
+default branch, and enter the tag. The manual run builds that tag, not the latest
+branch. This does not publish to addons.thunderbird.net.
 
 ## Check
 
