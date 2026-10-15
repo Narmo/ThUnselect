@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "ThUnselect",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "Nikita Denin",
   "description": "Adds an option to stop Thunderbird from selecting the next message after deleting, archiving, or moving selected messages.",
   "browser_specific_settings": {

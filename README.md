@@ -11,7 +11,7 @@ cleared, without first opening the next message.
 
 ## Install
 
-1. Download or build `dist/thunselect-1.1.0.xpi`.
+1. Download or build `dist/thunselect-1.2.0.xpi`.
 2. In Thunderbird, open **Add-ons and Themes → Extensions**.
 3. Open the gear menu, choose **Install Add-on From File…**, and select the XPI.
 4. Accept the permission prompt.
