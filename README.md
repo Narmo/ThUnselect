@@ -11,7 +11,7 @@ cleared, without first opening the next message.
 
 ## Install
 
-1. Download or build `dist/thunselect-1.2.0.xpi`.
+1. Download or build `dist/thunselect-1.2.1.xpi`.
 2. In Thunderbird, open **Add-ons and Themes → Extensions**.
 3. Open the gear menu, choose **Install Add-on From File…**, and select the XPI.
 4. Accept the permission prompt.
@@ -36,9 +36,9 @@ the extension restores normal selection behavior.
   requests **full access**. The hook uses private Thunderbird internals, so
   Thunderbird updates or other extensions that replace the same hook may require
   a compatibility update.
-- Declares Thunderbird 140–158 compatibility (`strict_max_version` is required
+- Declares Thunderbird 140–159 compatibility (`strict_max_version` is required
   for Experiments on ATN); runtime verification is against the installed
-  Thunderbird 158.0, not every release.
+  Thunderbird 159.0 on macOS, not every release.
 - The extension-owned preference
   `extensions.thunselect.preventNextSelection` remains after uninstall, but has
   no effect without the extension.
@@ -69,8 +69,8 @@ and generated release notes. No extra secrets are needed.
 Bump `manifest.json` and commit it before tagging, for example:
 
 ```sh
-git tag -a v1.2.0 -m "ThUnselect 1.2.0"
-git push origin HEAD v1.2.0
+git tag -a v1.2.1 -m "ThUnselect 1.2.1"
+git push origin HEAD v1.2.1
 ```
 
 The tagged commit must include the workflow for automatic releases. To release
@@ -87,4 +87,5 @@ node --test tests/selection.test.cjs
 For live checks, use a separate Thunderbird profile under `/tmp` with synthetic
 Local Folders messages, never a real mail account. Check deletion, permanent
 deletion, archiving, multi-selection, the final message, the checkbox off/on,
-new tabs/windows, and disabling the add-on.
+new tabs/windows, and disabling the add-on. These checks passed on Thunderbird
+159.0, including deletion with ThwunderThreads and ThwunderSearch enabled.
