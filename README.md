@@ -11,7 +11,7 @@ cleared, without first opening the next message.
 
 ## Install
 
-1. Download or build `dist/thunselect-1.2.1.xpi`.
+1. Download or build `dist/thunselect-1.3.0.xpi`.
 2. In Thunderbird, open **Add-ons and Themes → Extensions**.
 3. Open the gear menu, choose **Install Add-on From File…**, and select the XPI.
 4. Accept the permission prompt.
@@ -69,8 +69,8 @@ and generated release notes. No extra secrets are needed.
 Bump `manifest.json` and commit it before tagging, for example:
 
 ```sh
-git tag -a v1.2.1 -m "ThUnselect 1.2.1"
-git push origin HEAD v1.2.1
+git tag -a v1.3.0 -m "ThUnselect 1.3.0"
+git push origin HEAD v1.3.0
 ```
 
 The tagged commit must include the workflow for automatic releases. To release
