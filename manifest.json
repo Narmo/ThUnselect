@@ -8,7 +8,7 @@
     "gecko": {
       "id": "thunselect@narmo",
       "strict_min_version": "140.0",
-      "strict_max_version": "159.*"
+      "strict_max_version": "160.*"
     }
   },
   "icons": {

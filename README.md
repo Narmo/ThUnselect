@@ -36,9 +36,9 @@ the extension restores normal selection behavior.
   requests **full access**. The hook uses private Thunderbird internals, so
   Thunderbird updates or other extensions that replace the same hook may require
   a compatibility update.
-- Declares Thunderbird 140–159 compatibility (`strict_max_version` is required
+- Declares Thunderbird 140–160 compatibility (`strict_max_version` is required
   for Experiments on ATN); runtime verification is against the installed
-  Thunderbird 159.0 on macOS, not every release.
+  Thunderbird 160.0 on macOS, not every release.
 - The extension-owned preference
   `extensions.thunselect.preventNextSelection` remains after uninstall, but has
   no effect without the extension.
@@ -88,4 +88,5 @@ For live checks, use a separate Thunderbird profile under `/tmp` with synthetic
 Local Folders messages, never a real mail account. Check deletion, permanent
 deletion, archiving, multi-selection, the final message, the checkbox off/on,
 new tabs/windows, and disabling the add-on. These checks passed on Thunderbird
-159.0, including deletion with ThwunderThreads and ThwunderSearch enabled.
+159.0 and 160.0, including deletion with ThwunderThreads and ThwunderSearch
+enabled.
